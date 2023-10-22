@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FEFEFE;
+}
+
+nav {
+  width: 100%;
+  height: 64px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.logo {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+.nav-links {
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.nav-item a:hover {
+  color: #0049C9;
+}
+
+.intro-text {
+  position: relative;
+  top: 7vh;
+  text-align: center;
+}
+
+.intro-text p {
+  margin: 0;
+}
+
+.intro-text :nth-child(2) {
+  margin-bottom: 90px;
+}
+
+.unchanging-text {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  font-size: 4vw;
+}
+
+.unchanging-text-reg {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
+  font-size: 4vw;
+}
+
+/* Add other CSS properties as required */
+.blue-text {
+  color: #0049C9;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
+  font-size: 4vw;
+}
+
+.lightblue-text {
+  color: #0A84FF;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
+  font-size: 4vw;
+}
+
+.lightorange-text {
+  color: #FFBD7A;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
+  font-size: 4vw;
+}
+
+.orange-text {
+  color: #FF850A;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
+  font-size: 4vw;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.btn {
+  background-color: #FEFEFE; /* The button color */
+  color: #0049C9; /* The text color */
+  padding: 10px 20px; /* The padding around the text */
+  border-color: #0049C9; /* Removes the default border */
+  border-radius: 40px; /* Optional: for rounded corners */
+  font-size: 1.2em; /* The size of the text */
+  cursor: pointer; /* Changes cursor on hover */
+  margin: 0 10px; /* Space between buttons */
+  font-family: 'Source Sans 3', sans-serif;
+  transition: background-color 0.3s ease; /* Optional: for smooth color transition */
+}
+
+.btn:hover {
+  background-color: #0049C9; /* The button color on hover */
+  color: #FEFEFE;
+}
+
+.portfolio-img {
+  padding: 0 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landscape, .portrait-container {
+  width: 100%;
+  max-width: 1275px; /* or whatever maximum width you prefer */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landscape {
+  box-shadow: 0 10px 20px -4px rgba(0,0,0,.6);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.portrait-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 1275px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.portrait-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+
+.portrait {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px -4px rgba(0,0,0,.6);
+  object-fit: cover;
+}
+
+.image-description {
+  color: #a3a8ae;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This makes sure your content takes up the viewport's full height */
+  padding: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.profile-section {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-text {
+  flex: 1;
+}
+
+.profile-text h1 {
+  font-size: 36px;
+}
+
+.details-section {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+}
+
+.column h2 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  font-size: 3vh;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.rows-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;  /* center the container horizontally */
+}
+
+.row {
+  display: flex;
+  align-items: center;  /* Vertically centers the items in the row */
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.headshot-container {
+    flex: 0 1 calc(50% - 40px); /* Allocate half space minus margin */
+    display: flex;  /* New addition: use flex to center the image inside */
+    align-items: center; /* Center the image vertically */
+    justify-content: center; /* Center the image horizontally */
+    overflow: hidden;  /* Hide any part of the image that exceeds this container */
+    width: calc(50% - 40px); /* Half of parent width minus margin */
+    padding-bottom: calc(50% - 40px); /* Maintain square aspect ratio */
+    margin-right: 40px; /* Margin between image and text section */
+    position: relative; /* For the absolute positioning of the image */
+}
+
+.headshot {
+    position: absolute; 
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.text-section {
+    flex: 0 1 calc(50% - 40px); /* Allocate half space minus margin */
+    padding: 0 20px;
+    text-align: left;
+    line-height: 1.5;
+    max-width: calc(50% - 40px); 
+}
+
+.text-section {
+  flex: 1; /* Give it equal weight as the image */
+  padding: 0 20px;
+  text-align: left;
+  line-height: 1.5;
+  max-width: calc(50% - 40px); /* Takes half of the parent width minus the margin */
+}
+
+
+.text-section h1 {
+  font-size: 7vh; /* Adjust based on your preference */
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+}
+
+.text-section h2 {
+  margin-bottom: 20px;
+  font-size: 5vh; /* Adjust based on your preference */
+}
+
+.text-section p {
+  font-size: 1em;
+  margin-bottom: 20px; /* Spacing after each paragraph */
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
+}
+
+.column {
+  flex: 1;
+  padding: 0 10px;
+}
+
+.column h3 {
+
+}
+

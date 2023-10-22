@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@700&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FEFEFE;
+}
+
+nav {
+  width: 100%;
+  height: 64px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.logo {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+.nav-links {
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.nav-item a:hover {
+  color: #0049C9;
+}
+
+/* Common container settings */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 15%; /* Top-bottom padding of 5% and left-right padding of 15% */
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Adjusting the main profile and text sections */
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5%; /* This will give space between the image and text section */
+}
+
+.profile-pic {
+  max-width: 400px;
+  border-radius: 5%;
+  box-shadow: 0 10px 20px -4px rgba(0,0,0,.6);
+}
+
+.profile-text {
+    max-width: 400px;
+}
+
+.profile-text h1 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.profile-text h2 {
+    font-size: 2em;
+  }
+
+.profile-text p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.section-divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ddd;  /* Setting a border at the top only. Change the color as per your design preference */
+    margin-top: 75px;
+    margin-bottom: 30px;
+}
+
+/* Adjusting the detail sections below */
+.details-section {
+    display: flex;
+    gap: 1%; /* Adjust as per your preference */
+    width: 100%;
+}
+
+.column {
+    flex: 1;
+}
+
+.column h2 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-top: 0;
+  position: relative;
+}
+
+.heading-break {
+    width: 10%;
+    border: none;
+    border-top: 3px solid #ddd;  /* Setting a border at the top only. Change the color as per your design preference */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.column h3 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.column p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
