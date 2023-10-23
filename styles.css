@@ -216,12 +216,15 @@ nav {
   }
 
   .intro-text {
-    top: 15vh;
+    top: 10vh;
   }
 
   .unchanging-text,
   .unchanging-text-reg,
-  .blue-text {
+  .blue-text,
+  .lightblue-text,
+  .lightorange-text,
+  .orange-text {
     font-size: 8vw;
   }
   
@@ -239,5 +242,4 @@ nav {
     width: 48%; /* Adjusting for a 2-column grid layout */
   }
 }
-
 
