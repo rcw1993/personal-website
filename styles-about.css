@@ -171,3 +171,32 @@ nav {
     text-decoration: none;
   color: #0049C9;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .container {
+    padding: 5% 5%; 
+  }
+
+  .profile-section {
+    flex-direction: column;
+  }
+
+  .profile-pic {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .details-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .column {
+    text-align: center;
+  }
+}
