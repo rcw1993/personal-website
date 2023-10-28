@@ -66,6 +66,16 @@ nav {
 }
 
 /* Common container settings */
+
+.centered-content {
+  display: flex;
+  justify-content: center; /* centers items on the horizontal axis */
+  align-items: center;     /* centers items on the vertical axis */
+  min-height: calc(100vh - 64px);  /* subtracting the height of the navbar */
+  flex-direction: column; 
+}
+
+
 .container {
     display: flex;
     flex-direction: column;
@@ -87,7 +97,6 @@ nav {
 
 .profile-pic {
   width: 50%;
-  border-radius: 5%;
   box-shadow: 0 10px 20px -4px rgba(0,0,0,.6);
 }
 
@@ -200,3 +209,23 @@ nav {
     text-align: center;
   }
 }
+
+@keyframes wave {
+  0%, 100% {
+      transform: rotate(0deg);
+  }
+  25%, 75% {
+      transform: rotate(-20deg);
+  }
+  50% {
+      transform: rotate(20deg);
+  }
+}
+
+.waving-hand {
+  display: inline-block;
+  animation: wave 1s infinite;
+  transform-origin: 50% 70%; /* This adjusts the pivot point of the rotation */
+}
+
+

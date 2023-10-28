@@ -124,17 +124,24 @@ nav {
   text-align: center;
 }
 
+.button-container a {
+  display: inline-block;
+}
+
 .btn {
   background-color: #FEFEFE; /* The button color */
   color: #0049C9; /* The text color */
   padding: 10px 20px; /* The padding around the text */
   border-color: #0049C9; /* Removes the default border */
+  border: 2px solid;
   border-radius: 40px; /* Optional: for rounded corners */
   font-size: 1.2em; /* The size of the text */
   cursor: pointer; /* Changes cursor on hover */
   margin: 0 10px; /* Space between buttons */
   font-family: 'Source Sans 3', sans-serif;
   transition: background-color 0.3s ease; /* Optional: for smooth color transition */
+  min-width: 125px; /* Example width; adjust to your preference */
+  text-align: center; /* Makes sure text and icons stay centered */
 }
 
 .btn:hover {
